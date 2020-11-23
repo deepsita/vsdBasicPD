@@ -11,3 +11,35 @@ With this note, the focus will narrow down to the details in design of real time
 
 
 ![birdseye](https://user-images.githubusercontent.com/25682001/99968895-c01c0f80-2dbf-11eb-9682-3030585203f7.png)
+
+
+## Study  & Review of components of RISC-V based picoSoC.
+### Components of a Soc
+* The chip has the core where all the logic, Macros, Foundary IP's lies and pads for signal I/O and the total die after the floorplanning, placement, routing etc are completed. 
+* Interface between an application and actual hardware is brought in by the system software. 
+* However, the hardware understands only the binaries, and hence an abstract interface which starts with Intruction Set Architecture, then the RTL Description.
+* Once RTL description is done, then the process of conversion of RTL to physical chip is done. 
+### Introduction to RISC-V picoSoc
+RISC-V is an open-source standard instruction set architecture (ISA). Each SoC has a RISC-V processor, memory, a range of I/O, and interfaces for embedding user functions. PicoSoC example components are UART, SPI memory controller, Scratchpad SRAM memory, SPI flash memo.
+### Design Flow 
+* The RTL description of the Soc is done as the initial step. The reference design of Raven PicoSoc - picorv32 is considered for further steps.
+* The RTL is converted to gate level netlist with Synthesis tool called Yosys embedded in the QFLOW tool chain.
+* Then comes the floorplanning, placement, Routing, CTS.
+* The most important step is Static Timing Analysis (STA) which should be performed at each and every juncture of the design step in order to meet the requirements of the design.
+#### Open-Source tools for chip design
+| Design Step                                | Tool      |
+|--------------------------------------------|-----------|
+| Synthesis                                  | Yosys     |
+| Floorplanning                              | Graywolf  |
+| Placement                                  | Graywolf  |
+| Clock Tree Synthesis (CTS)                 | Graywolf  |
+| Layout Edit, view                          | MAGIC     |
+| Pre-layout, post-layout, spice simulations | NGSPICE   |
+| Static Timing Analysis                     | OpenTimer |
+## Chip Planning Strategies
+
+## Design and Charecterisation of Library cells
+
+## Pre-Lyout Timing Analysis
+
+## Final RTL2GDS
