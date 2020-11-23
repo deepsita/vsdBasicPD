@@ -358,7 +358,7 @@ The Routing, STA and backannotation are performed and the frequencies are compar
 
 The route of the design is shown below.
 
-![route](https://user-images.githubusercontent.com/25682001/99999259-ec4a8700-2de5-11eb-97a7-b4c772043156.png)
+<img width="800" alt="route" src="https://user-images.githubusercontent.com/25682001/99999259-ec4a8700-2de5-11eb-97a7-b4c772043156.png"> 
 
 The prelayout Frequency is shown below
 
