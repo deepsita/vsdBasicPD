@@ -108,6 +108,7 @@ The command to invoke the picorv32 design in the QFLOW manager is
 
      cp ../verilog/picorv32.v source/.
      Qflow gui &
+     
 * Then the Placement settings are given as the INitial density of 0.7 and the aspect ratio as 1. 
 * The Pins placemnet can be done using the QFLOW Pin Manager.
 * Few pins are left with the same positions and few unassigned pins are taken as a seperate group and specify the placement of the pins.
@@ -115,6 +116,8 @@ The command to invoke the picorv32 design in the QFLOW manager is
 <img width="800" alt="qflow_pin" src="https://user-images.githubusercontent.com/25682001/99987181-29a71880-2dd6-11eb-801a-3bfcad6d95a4.PNG">
 
 Now the placemnet is Run.
+
+
 <img width="800" alt="placement" src="https://user-images.githubusercontent.com/25682001/99987299-4d6a5e80-2dd6-11eb-9690-36a3c580489c.png">
 
 
@@ -201,8 +204,7 @@ Clone the ngspice repo
  ##### Task-1 Spice Simulation of Inverter - DC and Transient
      cd ngspice_labs
      ngspice inv.spice
-The snippet of spice of inverter is as below
-
+     
 
 Commands to run Dc Analysis are as below
 
@@ -211,8 +213,8 @@ Commands to run Dc Analysis are as below
       ngspice 1 -> setplot dc1
       ngspice 1 -> plot out in
       
- ![dc_res](https://user-images.githubusercontent.com/25682001/99997953-e6ec3d00-2de3-11eb-94c4-b592bd4d128c.png)
 
+ <img width="800" alt="dc_res" src="https://user-images.githubusercontent.com/25682001/99997953-e6ec3d00-2de3-11eb-94c4-b592bd4d128c.png"> 
 
 Commands to run Transient Analysis are as below
 
@@ -228,10 +230,14 @@ Commands to run Transient Analysis are as below
 * It is observed that the rise delay decreases wit increase in the PMOS width
 * This is due the inverse relation between R and (W/L).
 The simulation result with NMOS and PMOS equal sizes is shown below
+
+
 ![inv_wp=wn](https://user-images.githubusercontent.com/25682001/99994377-edc48100-2dde-11eb-9b9e-d5f5b2441b5b.png)
 
 
 The simulation result with PMOS being three times of NMOS is shown below
+
+
 ![inv_wp=3wn](https://user-images.githubusercontent.com/25682001/99994359-e3a28280-2dde-11eb-9b2f-4cb5e0bb8949.png)
 
 
@@ -245,18 +251,27 @@ Complete the layout of a speciic function given.
 Verify the pre-layout and post-layout simulations'
 
 The initial layout is as shown below
+
+
 ![drcclean](https://user-images.githubusercontent.com/25682001/99995288-287ae900-2de0-11eb-86e4-0914d1462b63.png)
 
 The completed layout with all the metal connections is shown below
-![postlayoutmagic](https://user-images.githubusercontent.com/25682001/99995202-0d0fde00-2de0-11eb-8297-a75af273a448.PNG)
+
+
+ <img width="800" alt="postlayoutmagic" src="https://user-images.githubusercontent.com/25682001/99995202-0d0fde00-2de0-11eb-8297-a75af273a448.PNG"> 
+
 
 
 The Pre-layout simulation of the given function is shown below
+
+
 ![prelayoutsim](https://user-images.githubusercontent.com/25682001/99995378-49433e80-2de0-11eb-8d71-4ea91beff3c4.png)
 
 
 
 The Post-layout simulation of the given function is shown below
+
+
 ![postlayoutsim](https://user-images.githubusercontent.com/25682001/99995399-53fdd380-2de0-11eb-840a-ca49882e43c8.png)
 
 
