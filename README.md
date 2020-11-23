@@ -5,8 +5,7 @@
 
 The workshop is hosted on virtual learning platform called Intelligent Assesment Technology which unlocks the potential of everyone. The course is designed to bring up a solution in bridging the gap of theoretical concepts and practical experience. 
 ## Bird's Eye view of skills acquired
-The workshop starts with an interesting pictorial explanation of System on Chip and 
-various components of the chip. The next target is to understand where the actual ISA, Hardware Design, Physical Design stands while designing a complete system. 
+The workshop starts with an interesting pictorial explanation of System on Chip and various components of the chip. The next target is to understand where the actual ISA, Hardware Design, Physical Design stands while designing a complete system. 
 With this note, the focus will narrow down to the details in design of real time SoC Chips. The hands-on introduction to every stage in the flow of the chip design with state of art open-source tools. "NGSPICE" for circuit spice, pre-layout and post-layout simulations , "MAGIC" for layout draw and edit,"QFLOW" for the complete tool chain starting from synthesis were EDA tools utilised for hands-on.
 
 
@@ -36,6 +35,26 @@ RISC-V is an open-source standard instruction set architecture (ISA). Each SoC h
 | Layout Edit, view                          | MAGIC     |
 | Pre-layout, post-layout, spice simulations | NGSPICE   |
 | Static Timing Analysis                     | OpenTimer |
+
+### Hands-on 
+Clone the vsdflow repo with the following command in the terminal. 
+    
+
+
+    git clone https://github.com/kunalg123/vsdflow.git
+
+##### Task-1 Area Estimation of the layout
+The qflow tool is used display the design in the MAGIC layout viewer with the following commands.
+
+
+    cd vsdflow
+    ./vsdflow spi_slave_design_details.csv
+    cd outdir_spi_slave
+    qflow display spi_slave
+
+##### Task-2 Synthesis of reference design -picorv32
+
+
 ## Chip Planning Strategies
 
 ## Design and Charecterisation of Library cells
@@ -43,3 +62,8 @@ RISC-V is an open-source standard instruction set architecture (ISA). Each SoC h
 ## Pre-Lyout Timing Analysis
 
 ## Final RTL2GDS
+
+
+
+
+ 
