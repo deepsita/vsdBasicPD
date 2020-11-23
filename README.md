@@ -8,3 +8,6 @@ The workshop is hosted on virtual learning platform called Intelligent Assesment
 The workshop starts with an interesting pictorial explanation of System on Chip and 
 various components of the chip. The next target is to understand where the actual ISA, Hardware Design, Physical Design stands while designing a complete system. 
 With this note, the focus will narrow down to the details in design of real time SoC Chips. The hands-on introduction to every stage in the flow of the chip design with state of art open-source tools. "NGSPICE" for circuit spice, pre-layout and post-layout simulations , "MAGIC" for layout draw and edit,"QFLOW" for the complete tool chain starting from synthesis were EDA tools utilised for hands-on.
+
+
+![birdseye](https://user-images.githubusercontent.com/25682001/99968895-c01c0f80-2dbf-11eb-9682-3030585203f7.png)
