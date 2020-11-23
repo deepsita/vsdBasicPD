@@ -9,7 +9,8 @@ The workshop starts with an interesting pictorial explanation of System on Chip 
 With this note, the focus will narrow down to the details in design of real time SoC Chips. The hands-on introduction to every stage in the flow of the chip design with state of art open-source tools. "NGSPICE" for circuit spice, pre-layout and post-layout simulations , "MAGIC" for layout draw and edit,"QFLOW" for the complete tool chain starting from synthesis were EDA tools utilised for hands-on.
 
 
-![birdseye](https://user-images.githubusercontent.com/25682001/99968895-c01c0f80-2dbf-11eb-9682-3030585203f7.png)
+
+<img width="600" alt="birdseye" src="https://user-images.githubusercontent.com/25682001/99968895-c01c0f80-2dbf-11eb-9682-3030585203f7.png">
 
 
 ## Study  & Review of components of RISC-V based picoSoC.
@@ -51,8 +52,13 @@ The qflow tool is used display the design in the MAGIC layout viewer with the fo
     ./vsdflow spi_slave_design_details.csv
     cd outdir_spi_slave
     qflow display spi_slave
+<img width="568" alt="total_layout_area_output_si_slaveeg" src="https://user-images.githubusercontent.com/25682001/99975777-a7fcbe00-2dc8-11eb-93cb-9c4ce92579e2.png">
 
-##### Task-2 Synthesis of reference design -picorv32
+##### Task-2 Synthesis of reference design 
+The reference design is synthesised using the qflow tool chain with the following command. The proper technology, verilog source file and top module name should be provided to the tool in the settings.
+
+     cp ~\vsdflow/verilog/picorv32.v source/.
+     qflow gui &
 
 
 ## Chip Planning Strategies
