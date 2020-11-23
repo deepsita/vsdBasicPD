@@ -1,7 +1,7 @@
 # vsdBasicPD
 #### Workshop on VLSI/SoC Physical Design with concepts mapped to open source tools by VSD.
 ## Framework of the workshop 
-  #### Aim - Learn - Assess - Practice - Bridge the gap - Industry Ready
+  ### Aim - Learn - Assess - Practice - Bridge the gap - Industry Ready
 
 The workshop is hosted on virtual learning platform called Intelligent Assesment Technology which unlocks the potential of everyone. The course is designed to bring up a solution in bridging the gap of theoretical concepts and practical experience. 
 ## Bird's Eye view of skills acquired
