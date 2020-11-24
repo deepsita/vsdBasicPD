@@ -374,6 +374,6 @@ The complete steps from Synthesis to Routing and STA are reviewed.
 
 
 ## Acknowledgement
-Kunal Ghosh, C0-founder (VSD corp.Pvt.Ltd)
+Kunal Ghosh, Co-founder (VSD corp.Pvt.Ltd)
 
  
